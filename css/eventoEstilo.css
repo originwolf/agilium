@@ -1,0 +1,26 @@
+#p2{
+	padding-bottom: 50px;
+}
+ 
+.row img:hover{
+	width: 80%;
+
+}
+.row h5{
+	color: #f47425;
+}
+#ideia{
+padding-top: 40px;
+}
+.container{
+	border: 1px solid rgb(244, 116, 37);
+	background-color: rgb(249, 178, 134);
+	
+}
+footer{
+	padding-top:20px;
+}
+a:link 
+{ 
+text-decoration:none; 
+}

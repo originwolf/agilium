@@ -1,0 +1,115 @@
+}
+.jumbotron{
+background-image: url(../images/jumbotrom-bg.png);
+border-radius: 0;
+background-repeat: no-repeat; 
+background-size: 100%;
+background-position: center;
+color: #000;
+}
+
+.service{
+
+background-color: #404040;
+border-top: 0.625rem solid #3f3221;
+}
+
+.col-meio{
+background-color: #3f3221;
+}
+
+.service p{
+min-height: 10.5rem;
+
+}
+
+.faleconosco{
+		padding-top: 80px;
+
+			clear: both;
+		}
+		
+		.faleconosco p{
+			color: #404040;
+			font-size: 15px;
+			font-family: Arial,sans-serif;
+			text-align: justify;
+			line-height: 1.5;
+
+		}
+		.faleconosco h1{
+			text-align: center;
+		}
+		.identificacao,.message{
+			width: 350px;
+			height: 420px;
+			border: 1px solid #404040;
+			border-radius: 10px;
+		}
+		.message{
+			float: right;
+			padding-left: 20px;
+			margin-right:130px;
+			margin-bottom:20px;
+		}
+		.identificacao{
+			float: left;
+			padding-left: 20px;
+			margin-left:130px;
+			margin-bottom:20px;
+		}
+		#user,#email{
+			width: 90%;
+		}
+		#user,#email,#assunto,#mensagem{
+			font-size: 18px;
+			padding:8px;
+			width: 95%;
+			resize: none;
+			
+		}
+		
+		legend{
+			font-size: 18px;
+			margin-left: 25px;
+			padding-left: 10px;
+			padding-right: 10px;
+			color: #404040;
+			resize: none; /*redimensiona a caixa para ficar fixa*/
+		}
+		.botoes{
+			text-align: center;
+			margin-top:25px;
+			clear: both;
+			margin-bottom:40px;
+	}
+		.limpar,.enviar{
+			border: 1px solid #000;
+			font-size: 20px;
+			border-radius:20px;
+			padding:7px 20px;
+			box-shadow: 2px 2px 2px #333;
+			color: #fff;
+		}
+		.limpar{
+			background-color: #660000; 
+		}
+		.enviar{
+			background-color: #0b5306;
+		}
+		.limpar:hover{
+			background-color: #600;
+		}
+		.enviar hover{
+			background-color: #060;
+		}
+		#user::valid{
+			border: 1px solid #090;
+		}
+		#user::invalid{
+			border: 1px solid #900;
+
+		}
+		textarea{
+			height: 12rem;
+		}
