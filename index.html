@@ -69,7 +69,7 @@
 		</header>
 
 	</div>
-	<div class="logo">
+	<div>
 		<center>
 			<img src="imagens/agilum.png" alt="">
 		</center>
@@ -107,7 +107,7 @@
 					<img src="imagens/agilium_pdv1.png" alt="" aclass="card-img-bottom">
 				</div>
 			</div>
-
+		</div>
 		</section>
 
 		<section class="modulos" class="my-5">
@@ -203,8 +203,66 @@
 					<p>	Atualmente desenvolvemos sua solução de retaguarda e frente de loja para atender às necessidades de um mercado exigente que demanda qualidade na prestação de serviços a um custo acessível.</p>
 				</article>
 			</div>
-		</section> 
+		</section>
+		<!-- footer start -->
+<footer id="footer" class="no-margin">
+	<div class="footer-top text-center">
+
+		<section class="row col-md-12">
+			<div class="col-lg-4 col-md-12 agradecimentos">
+				<h3>Agilium Tech</h3>
+				<p>Obrigado por nos visitar!</p>
+			</div>
+			<div class="col-lg-4 col-md-12 contatos">
+				<h4>Contate-nos</h4>
+
+				<ul>
+					<div style="color: #fff"><li class="fas fa-phone mr-1" style="color:#f47425;"><a target="_blank" href=https://api.whatsapp.com/send?phone=5543999069250&text=Oi%2C%20queria%20um%20or%C3%A7amento%20de%20um%20sistema%20em%20VBA!">
+					</li>(00)00000-0000</div> <br>
+					<div style="color: #fff"><li class="fas fa-envelope mr-1" style="color:#f47425;"></li>exemplo@exemplo.com</div> <br>
+
+
+				</ul>
+				<div class="redes-sociais">
+					<ul>
+						<a target="_blank" href="https://www.facebook.com/rpnaomimachado"><span class="fab fa-facebook-f facebook"></span></a>
+						<a target="_blank" href="https://instagram.com/rpnaomimachado?igshid=64ep5myutwbz"><span class="fab fa-instagram instagram" ></span></a>
+
+					</ul>	
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 loc">
+				<h4>Localização</h4>
+				<p id="rua">Rio de Janeiro / RJ </p>
+
+			</div>
+		</section>
 
 	</div>
+</footer>
+<div class="copyright no-margin">
+	<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - by WANTED</p> 
+</div>
+<a href="#top" class="fas fa-angle-double-up"></a>
+<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('a[href="#top"]').fadeIn();
+			} else {
+				$('a[href="#top"]').fadeOut();
+			}
+		});
+		$('a[href="#top"]').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+	});
+</script>
+<!-- end of footer -->
+
+</div>
 </body>
+</head>
 </html>
