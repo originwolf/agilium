@@ -56,17 +56,26 @@
 							<li class="nav-item pr-3">
 								<a class="nav-link" href="#footer">Contato</a>
 							</li>
+							<li class="nav-item dropdown">
+					<a href="#" class="nav-link mx-2 dropdown-toggle" data-toggle="dropdown">Já é Cliente?</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a href="contato.php">Torne-se um</a></li>
+						<li class="dropdown-item"><a href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a></li></ul>
 						</ul>
 					</div>
 				</nav>
-				<script> //ao clicar em um link o menu recolhe
-				$(document).ready(function () {
-					$(".navbar-nav li a").click(function(event) {
-						$(".navbar-collapse").collapse('hide');
-					});
-				});
-			</script>				
-		</header>
+				<script>
+		$(document).ready(function(){
+			$(window).on("scroll", function(){
+				if($(window).scrollTop()>=150){
+					$(".top-navigation").addClass('compressed');
+				}else{
+					$(".top-navigation").removeClass('compressed');
+				}
+			});
+		});
+	</script>
+</header>
 
 	</div>
 	<div>
@@ -110,7 +119,7 @@
 		</div>
 	</section>
 
-	<section class="modulos" class="my-5">
+	<section id="modulos" class="my-5">
 		<center>
 			<h4>Módulos</h4>
 		</center>
@@ -190,20 +199,6 @@
 
 
 
-</section>
-<section class="SobreNos" style="">
-	<center>
-		<h4>SOBRE NÓS</h4>
-	</center>
-	<div class="row col-md-12">
-		<article class="SobreNos col-md-6">
-			<p>	A Agilium Tech desenvolve sistemas há mais de 9 anos, sempre prezando pela qualidade, facilidade e agilidade de suas soluções.</p>
-		</article>
-
-		<article class="SobreNos col-md-6">
-			<p>	Atualmente desenvolvemos sua solução de retaguarda e frente de loja para atender às necessidades de um mercado exigente que demanda qualidade na prestação de serviços a um custo acessível.</p>
-		</article>
-	</div>
 </section>
 <!-- footer start -->
 <footer id="footer" class="no-margin">
