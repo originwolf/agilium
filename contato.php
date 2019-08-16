@@ -56,6 +56,11 @@
 							<li class="nav-item pr-3">
 								<a class="nav-link" href="#footer">Contato</a>
 							</li>
+						<li class="nav-item dropdown">
+					<a href="#" class="nav-link mx-2 dropdown-toggle" data-toggle="dropdown">Já é Cliente?</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a href="contato.php">Torne-se um</a></li>
+						<li class="dropdown-item"><a href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a></li></ul>
 						</ul>
 					</div>
 				</nav>
@@ -74,9 +79,15 @@
 			<img src="imagens/agilum.png" alt="">
 		</center>
 		</header>
-
+		<div>
+			<center>
+			<img src="imagens/contato1.png">
+		</center>
+	</div>
+		<center>
 		<h4 id="ideia">Gostou dos nossos serviços?</h4>
 		<h5>Solicite seu orçamento sem compromisso.</h5>
+	</center>
 		<img src="imagens\email.png" alt="" class=" img-fluid col-md-12 d-none d-block" style="width: 100%; padding: 0">
 
 		<!-- formulario -->
