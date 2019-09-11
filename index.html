@@ -25,8 +25,7 @@
 			<!-- start header -->
 			<!-- start header -->
 
-			<header> 
-				
+			<header>
 
 				<!--Início da barra de menu -->
 
@@ -52,7 +51,6 @@
 							<li class="nav-item pr-3">
 								<a class="nav-link" href="contato.php">Fale Conosco</a>
 							</li>
-
 							<li class="nav-item pr-3">
 								<a class="nav-link" href="#footer">Contato</a>
 							</li>
@@ -78,13 +76,13 @@
 </header>
 
 	</div>
-	<div>
+	<section id="Imagem">
 		<center>
-			<img src="imagens/agilum.png" alt="">
+			<img src="imagens/agilium.png" alt="Imagem Responsiva"class="py-3">
 		</center>
+	</section>
 
 		<section class="my-5">
-		
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card">
@@ -212,7 +210,7 @@
 
 </section>
 <!-- footer start -->
-<footer id="footer" class="no-margin">
+<!-- <footer id="footer" class="no-margin">
 	<div class="footer-top text-center">
 
 		<section class="row col-md-12">
@@ -255,9 +253,70 @@
 			return false;
 		});
 	});
+</script> 
+<!-- end of footer -->
+
+		
+<footer id="footer" class="no-margin">
+	<div class="footer-top text-center">
+
+		<section class="row col-md-12">
+			<div class="col-lg-4 col-md-12 agradecimentos">
+				<h3>Agilium Tech</h3>
+				<p>Obrigado por nos visitar!</p>
+			</div>
+			<div class="col-lg-4 col-md-12 contatos">
+				<h4>Contate-nos</h4>
+
+				<ul>
+					<ul>
+							<div style="color: #fff"><li class="fas fa-phone mr-1" style="color:rgb(244, 116, 37);"></li>+55 (21) 99775-7150</div> <br>
+							<div style="color: #fff"><li class="fas fa-envelope mr-1" style="color:rgb(244, 116, 37);"></li>suporte@agilium.com.br</div> <br>
+						</ul>
+
+
+				</ul>
+				<div class="redes-sociais">
+					<ul>
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=5521997757150&text=Oi%2C%20tudo%20bem%3F%20Queria%20solicitar%20um%20or%C3%A7amento!"><span  style="color: rgb(244, 116, 37)" class="fab fa-whatsapp whatsapp" ></span></a>
+
+					</ul>	
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 loc">
+				<h4>Localização</h4>
+				<p id="rua">Rio de Janeiro / RJ </p>
+			</div>
+		</section>
+
+	</div>
+</footer>
+<div class="copyright no-margin">
+	<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - by EBENÉZER</p> 
+</div>
+<a href="#top" class="fas fa-angle-double-up"></a>
+<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('a[href="#top"]').fadeIn();
+			} else {
+				$('a[href="#top"]').fadeOut();
+			}
+		});
+		$('a[href="#top"]').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+	});
 </script>
 <!-- end of footer -->
 
+</div>
+</body>
+</head>
+</html>
 </div>
 </body>
 </head>
