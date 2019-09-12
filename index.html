@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Agilium </title>
-	<meta name="autor" content="Wanted">
+	<meta charset="UTF-8"> <!-- traduz os código para caracteres latinos -->
+	<title>Agilium Tech</title>
+
+	<meta name="author" content="Ebenézer">
 	<meta name="keywords" content="">
-	<meta name="robots" content="index, follow">
-	<meta name="viewport" content="width=device-whidth, initial-scale=1.0">
+	<!-- palavras que digitadas poderão levar ao seu site ser encontrado -->
+	<meta name="robots" content="index, follow"><!-- palavras que digitadas não levarão (não poderá levar de maneira alguma) ao seu site ser encontrado -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- usada para reconhecer o bodstrap  é a tag mais importante a largura do site será igual a largura do dispositivo-->
+	
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/all.css">
@@ -19,19 +24,21 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="imagens/logo.png">
+	<link rel="shortcut icon" href="images/logo.png">
+
+	
 	<body>
 		<div class="container-fluid">
 			<!-- start header -->
-			<!-- start header -->
 
-			<header>
+			<header> 
+				
 
 				<!--Início da barra de menu -->
 
 				<nav class="navbar navbar-expand-lg no-margin">
-					<a class="navbar-brand d-none d-lg-block pr-5" href="index.html"><img id="logo" src="imagens/logo.png" alt="Agilium Tech"></a>
-					<a class="navbar-brand font-weight-bold d-lg-none d-block pl-2 logo" href="#background"></a>
+					<a class="navbar-brand d-none d-lg-block pr-5" href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
+					<a class="navbar-brand font-weight-bold d-lg-none d-block pl-2 logo" href="#background">Agilium</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="fas fa-bars"></span>
 					</button>
@@ -55,33 +62,29 @@
 								<a class="nav-link" href="#footer">Contato</a>
 							</li>
 							<li class="nav-item dropdown">
-					<a href="#" class="nav-link mx-2 dropdown-toggle" data-toggle="dropdown">Já é Cliente?</a>
-					<ul class="dropdown-menu">
-						<li class="dropdown-item"><a href="contato.php">Torne-se um</a></li>
-						<li class="dropdown-item"><a href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a></li></ul>
-						</ul>
-					</div>
-				</nav>
-				<script>
-		$(document).ready(function(){
-			$(window).on("scroll", function(){
-				if($(window).scrollTop()>=150){
-					$(".top-navigation").addClass('compressed');
-				}else{
-					$(".top-navigation").removeClass('compressed');
-				}
-			});
-		});
-	</script>
-</header>
+								<a href="#" class="nav-link mx-2 dropdown-toggle" data-toggle="dropdown">Já é Cliente?</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="contato.php">Torne-se um</a></li>
+									<li class="dropdown-item"><a href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a></li></ul>
+								</ul>
+							</div>
+						</nav>
+				<script>//ao clicar em um link o menu recolhe
+				$(document).ready(function () {
+					$(".navbar-nav li a").click(function(event) {
+						$(".navbar-collapse").collapse('hide');
+					});
+				});
+			</script>				
+		</header>
+		<section id="Imagem">
+			<center>
+				<img src="images/agilium.png" alt="Imagem Responsiva"class="py-3">
+			</center>
+		</section>
 
-	</div>
-	<section id="Imagem">
-		<center>
-			<img src="imagens/agilium.png" alt="Imagem Responsiva"class="py-3">
-		</center>
-	</section>
 
+		
 		<section class="my-5">
 		<div class="row">
 			<div class="col-md-6">
@@ -89,7 +92,7 @@
 					<div class="card-header">
 						<h5>Software de gestão Agilium Manager</h5>
 					</div>
-					<img src="imagens/agilium_manager1.png" alt=""aclass="card-img-top">
+					<img src="images/agilium_manager1.png" alt=""aclass="card-img-top">
 					<div class="card-body">
 						<h2>Sistema ágil e intuitivo para facilitar o seu uso e aumenta a eficácia do seu negócio</h2>
 						<p>Controle de Estoque</p>
@@ -111,159 +114,132 @@
 						<p>Emissão de Cupom não fiscal para MEI</p>
 						<p>Realização de pagamentos através de vales</p>
 					</div>
-					<img src="imagens/agilium_pdv1.png" alt="" aclass="card-img-bottom">
+					<img src="images/agilium_pdv1.png" alt="" aclass="card-img-bottom">
 				</div>
 			</div>
 		</div>
 	</section>
-
-<section id="SobreNos" style="">
-	<center>
-		<h1>SOBRE NÓS</h1>
-			<p>	A Agilium Tech desenvolve sistemas há mais de 9 anos, sempre</p>
-			<p>prezando pela qualidade, facilidade e agilidade de suas soluções.</p>
-			<p>Atualmente desenvolvemos sua solução de retaguarda e frente de loja,</p> 
-			<p>para atender às necessidades de um mercado exigente que demanda qualidade</p> 
-			<p>na prestação de serviços a um custo acessível.</p>
-		</center>
-</section>
-
-	<section id="modulos" class="my-5">
-		<center>
-			<h1>Módulos</h1>
-		</center>
-		<h4>Clique para conhecer nossos módulos.</h4>
-
-		<div class="accordion" id="sanfona">
-			<div class="card-deck">
-				<div class="card ">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body01">Controle de Estoque</h5>
+		<div>
+			<!-- section linha laranja -->
+			<section id="linha">
+				<div class="row"> 
+					<div class="linha col-md-12 d-none d-md-block">		
 					</div>
-					<div class="card-body collapse" id="body01" data-parent="#sanfona">
-						<img src="imagens/estoque.png" alt="" class="card-img mx-auto ">
-						<p class="text-center">Com o controle de estoque você poderá saber com exatidão sua posição de estoque e saber exatamente o que, quando e quanto precisa ser comprado para reabastecer o estoque. Evite perder vendas por falta de estoque.</p>
+					<div class="linha1 col-md-12 d-md-none d-block">		
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body02">Controle de Compras</h5>
-					</div>
-					<div class="card-body collapse" id="body02" data-parent="#sanfona">
-						<img src="imagens/compra.png" alt="" class="card-img mx-auto">
+			</section>
+			<!-- fim do section linha laranja -->
 
-						<p class="text-center">Gerencie os pedidos de compras realizados aos fornecedores e agilize a entrada em estoque com a importação de Nota Fiscal Eletrônica e o cadastro automático de produtos.</p>
+
+			<!--div Sobre Nós-->
+
+			<section id="SobreNos" style="">
+				<center>
+					<h1>SOBRE NÓS</h1>
+					<p>	A Agilium Tech desenvolve sistemas há mais de 9 anos, sempre</p>
+					<p>prezando pela qualidade, facilidade e agilidade de suas soluções.</p>
+					<p>Atualmente desenvolvemos sua solução de retaguarda e frente de loja,</p> 
+					<p>para atender às necessidades de um mercado exigente que demanda qualidade</p> 
+					<p>na prestação de serviços a um custo acessível.</p>
+				</center>
+			</section>
+
+			<!-- fim da div Sobre Nós -->
+
+
+			<!-- section Modulos -->
+			<section id="modulos">
+	<h1>Módulos</h1>
+				<!-- section pesca -->
+				<div class="row">
+						<!-- dados pessoais -->
+						<div class="col-md-6">
+							<div class="form-group">
+					<h5>Controle de Estoque</h5>
+					<img src="images/estoque.png" alt="" width="60%" class="mx-auto d-block">
+
+					<p>Com o controle de estoque você poderá saber com exatidão sua posição de estoque e saber exatamente o que, quando e quanto precisa ser comprado para reabastecer o estoque. Evite perder vendas por falta de estoque.</p>
+				</div>
+				<div class="form-group">
+					<h5>Controle de Compras</h5>
+						<img src="images/compra.png" alt="" width="60%" class="mx-auto d-block">
+
+						<p>Gerencie os pedidos de compras realizados aos fornecedores e agilize a entrada em estoque com a importação de Nota Fiscal Eletrônica e o cadastro automático de produtos.</p>
+					</div>
+				<div class="form-group">
+						<h5 >Controle de Vendas</h5>
+						<img src="images/venda.png" alt="" width="60%" class="mx-auto d-block">
+						<p>Realize as vendas de forma simples e rápida através do PDV Frente de Loja. Acompanhe as vendas diárias através do Dashboard de Vendas com gráficos atualizados em tempo real.</p>
 					</div>
 				</div>
 
-
-
-
-				<div class="card">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body03">Controle de Vendas</h5>
+				<div class="col-md-6">
+										<div class="form-group form-group-right">
+						<h5>Controle de Caixas</h5>
+						<img src="images/caixa.png" alt="" width="60%" class="mx-auto d-block">
+						<p>Controle as movimentações dos caixas, sabendo exatamente quanto foi arrecadado em cada turno de trabalho com detalhes das formas de pagamento realizadas pelos clientes. Realize também as movimentações típicas de caixa, como suprimento e sangria.</p>
 					</div>
-					<div class="card-body collapse" id="body03" data-parent="#sanfona">
-						<img src="imagens/venda.png" alt="" class="card-img mx-auto">
-						<p class="text-center">Realize as vendas de forma simples e rápida através do PDV Frente de Loja. Acompanhe as vendas diárias através do Dashboard de Vendas com gráficos atualizados em tempo real.</p>
+				<div class="form-group">
+						<h5>Emissão de NFC-e</h5>
+					<img src="images/nfce.png" alt="" width="60%" class="mx-auto d-block">
+						<p>Emita a Nota Fiscal de Consumidor Eletrônica no momento da Venda de forma simples e ágil, gerando segurança e confiança para o seu negócio.</p>
 					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body04">Controle de Caixas</h5>
+				<div class="form-group">
+						<h5>Recibo de Vendas para MEI</h5>
+						<img src="images/recibo.png" alt="" width="60%" class="mx-auto d-block">
+						<p>Caso sua empresa não esteja obrigada a emitir a NFC-e, você também pode utilizar o Agilium PDV gerando um Recibo de Venda que é um cupom não fiscal para demonstrar a venda ao seu cliente.</p>
 					</div>
-					<div class="card-body collapse" id="body04" data-parent="#sanfona">
-						<img src="imagens/caixa.png" alt="" class="card-img mx-auto">
-						<p class="text-center">Controle as movimentações dos caixas, sabendo exatamente quanto foi arrecadado em cada turno de trabalho com detalhes das formas de pagamento realizadas pelos clientes. Realize também as movimentações típicas de caixa, como suprimento e sangria.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body05">Emissão de NFC-e</h5>
-					</div>
-					<div class="card-body collapse" id="body05" data-parent="#sanfona">
-						<img src="imagens/nfce.png" alt="" class="card-img mx-auto">
-						<p class="text-center">Emita a Nota Fiscal de Consumidor Eletrônica no momento da Venda de forma simples e ágil, gerando segurança e confiança para o seu negócio.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header text-center">
-						<h5 data-toggle="collapse" data-target="#body06">Recibo de Vendas para MEI</h5>
-					</div>
-					<div class="card-body collapse" id="body06" data-parent="#sanfona">
-						<img src="imagens/recibo.png" alt="" class="card-img mx-auto">
-						<p class="text-center">Caso sua empresa não seja obrigada a emitir a NFC-e, você também pode utilizar o Agilium PDV para gerar um Recibo de Venda que é um cupom não fiscal para demonstrar a venda ao seu cliente.</p>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</section>
-<footer id="footer" class="no-margin">
-	<div class="footer-top text-center">
-
-		<section class="row col-md-12">
-			<div class="col-lg-4 col-md-12 agradecimentos">
-				<h3>Agilium Tech</h3>
-				<p>Obrigado por nos visitar!</p>
-			</div>
-			<div class="col-lg-4 col-md-12 contatos">
-				<h4>Contate-nos</h4>
-
-				<ul>
-					<ul>
-							<div style="color: #fff"><li class="fas fa-phone mr-1" style="color:rgb(244, 116, 37);"></li>+55 (21) 99775-7150</div> <br>
-							<div style="color: #fff"><li class="fas fa-envelope mr-1" style="color:rgb(244, 116, 37);"></li>suporte@agilium.com.br</div> <br>
-						</ul>
-
-
-				</ul>
-				<div class="redes-sociais">
-					<ul>
-						<a target="_blank" href="https://api.whatsapp.com/send?phone=5521997757150&text=Oi%2C%20tudo%20bem%3F%20Queria%20solicitar%20um%20or%C3%A7amento!"><span  style="color: rgb(244, 116, 37)" class="fab fa-whatsapp whatsapp" ></span></a>
-
-					</ul>	
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-12 loc">
-				<h4>Localização</h4>
-				<p id="rua">Rio de Janeiro / RJ </p>
-			</div>
 		</section>
-
+<!-- footer start -->
+	<footer id="footer" class="no-margin">
+		<div class="footer-top text-center">
+			<section class="row col-md-12">
+				<div class="col-lg-4 col-md-12 agradecimentos">
+					<h3>Agilium Tech</h3>
+					<p>Obrigado por nos visitar!</p>
+				</div>
+				<div class="col-lg-4 col-md-12 contatos">
+					<h4>Contate-nos</h4>
+						<ul>
+						<div style="color: #fff"><li class="fas fa-phone mr-1" style="color:#f47425;"></li>+55 (21) 99775-7150</div> <br>
+						<div style="color: #fff"><li class="fas fa-envelope mr-1" style="color:#f47425;"></li>suporte@agilium.com.br</div> <br>
+						</ul>
+				<div class="redes-sociais">
+						<ul>
+							<a target="_blank" href="https://api.whatsapp.com/send?phone=5521997757150&text=Oi%2C%20tudo%20bem%3F%20Queria%20solicitar%20um%20or%C3%A7amento!"><span class="fab fa-whatsapp whatsapp" ></span></a>
+						</ul>	
+				</div>
+				</div>
+				<div class="col-lg-4 col-md-12 loc">
+					<h4>Localização</h4>
+					<p id="rua">Rio de Janeiro - RJ</p>
+				</div>
+		</section>
 	</div>
 </footer>
-<div class="copyright no-margin">
-	<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - by EBENÉZER</p> 
-</div>
-<a href="#top" class="fas fa-angle-double-up"></a>
-<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
-<script>
-	$(document).ready(function(){
-		$(window).scroll(function(){
+		<div class="copyright no-margin">
+			<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - Ebenézer</p> 
+		</div>
+		<a href="#top" class="fas fa-angle-double-up"></a>
+		<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
+		<script>
+			$(document).ready(function(){
+			$(window).scroll(function(){
 			if ($(this).scrollTop() > 100) {
-				$('a[href="#top"]').fadeIn();
+			$('a[href="#top"]').fadeIn();
 			} else {
-				$('a[href="#top"]').fadeOut();
+			$('a[href="#top"]').fadeOut();
 			}
-		});
-		$('a[href="#top"]').click(function(){
+			});
+			$('a[href="#top"]').click(function(){
 			$('html, body').animate({scrollTop : 0},800);
 			return false;
-		});
-	});
-</script>
+			});
+			});
+		</script>
 <!-- end of footer -->
-
-</div>
-</body>
-</head>
-</html>
 </div>
 </body>
 </head>

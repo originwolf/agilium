@@ -1,134 +1,152 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body{
-	font-family:Arial,Helvetica,sans-serif;
-	line-height:30px;
+font-family: Ubuntu, arial, sans-serif;
 }
-
-/*----------start cabeçalho=----------------*/
+/*----------start cabeçalho----------------*/
 nav {
-	position: fixed;
-	display: block;
-	height: 63px;
-	z-index: 100;
-	text-align: center;
-	background-color: #000;
-}
-
+        position: fixed;
+        display: block;
+        height: 63px;
+        z-index: 100;
+        text-align: center;
+        background-color: #000;
+    }
+   
 
 #navbarSupportedContent{
 	background-color: #000;
 }
 
 .logo{
-	font-size: 2.198rem;
-	letter-spacing: 1px;
-	color: #fff;
+font-size: 2.198rem;
+letter-spacing: 1px;
+color: #fff;
 }
 .navbar-brand img{
 
-	border-radius:circle;
-	width: 88px;
-	height:94px;
+border-radius:circle;
+width: 88px;
+height:94px;
 
 }
 .no-margin{
-	margin-left: -15px;
-	margin-right: -15px;
+margin-left: -15px;
+margin-right: -15px;
 }
-.nav-link{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
+.nav-link,.dropdown-item a{
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
 }
-.dropdown-item a{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.dropdown-item{
-	color: #ffa500;
-	border-top: 1px  solid #ffa500;
-	border-bottom: 1px  solid #ffa500;
 
-}
-.dropdown-item:hover{
-	color: #ffa500;
-	border-top: 1px  solid #ffa500;
-	border-bottom: 1px  solid #ffa500;
-}
 .nav-link:hover{
-color: rgb(249, 178, 134);
-border-top: 1px  solid rgb(249, 178, 134);
-border-bottom: 1px  solid rgb(249, 178, 134);
+color: rgb(244, 116, 37);
+border-top: 1px  solid rgb(244, 116, 37);
+border-bottom: 1px  solid rgb(244, 116, 37);
 }
-. img{
-	max-width: 100%;
-}
+
 .dropdown-menu{
 top: 3.5rem;
 background-color: #404040;
 border-radius: 0;
 }
 .fa-bars{
-	color: #fff;
+	color: rgb(244, 116, 37);
 	font-size: 1.85rem;
 }
 img#logo{
-	margin-top:32px;
-}
-.Imagem img{
-	max-width: 100%;
+margin-top:32px;
 }
 
 /*carousel*/
 
 .carousel{
-	margin-bottom: -1rem;
+margin-bottom: -1rem;
 }
 .carousel-caption{
-	top: 20%;
+top: 20%;
+left: 10%;
+text-align: left;
+}
+
+.carousel-caption-title{
+font-size: 4.5rem;
+font-weight: 300;
+margin-bottom: 0;
+}
+
+.carousel-caption-text{
+font-size: 3.5rem;
+font-weight: 900;
+margin-bottom: 0;
+text-transform:uppercase;
+line-height: normal; /*altura da linha*/
+font-family: 'Lato', sans-serif;
+}
+
+.carousel-indicators li{
+bottom: 0.5rem;
+}
+.carousel-indicators li:hover{
+background-color: #fff;
+}
+.jumbotron{
+border-radius: 0;
+background-repeat: no-repeat; 
+background-size: 100%;
+background-position: center;
+color: #000;
+}
+ 
+
+	/*section linha laranja*/
+.linha{
+			border-top: 20px solid rgb(244, 116, 37);
+	}
+.linha1{
+			border-top: 10px solid rgb(244, 116, 37);
+	}
+/*--------------------------Slide Show---------------------------*/
+
+
+.carousel-caption{
+	position: absolute;
+	top: 15.625rem;
 	left: 10%;
 	text-align: left;
+	color: rgb(244, 116, 37);
 }
 
 .carousel-caption-title{
 	font-size: 4.5rem;
-	font-weight: 300;
 	margin-bottom: 0;
+	font-weight: 300;
+	color: rgb(244, 116, 37);
 }
 
 .carousel-caption-text{
+	font-family: 'Lato';
 	font-size: 3.5rem;
 	font-weight: 900;
-	margin-bottom: 0;
-	text-transform:uppercase;
-	line-height: normal; /*altura da linha*/
-	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+}
+
+.carousel-caption-title span,
+.carousel-caption-text span{
+	color: #2d2418;
 }
 
 .carousel-indicators li{
-	bottom: 0.5rem;
+	border-radius: 100%;
+	width: 1.25rem;
+	height: 1.25rem;
 }
-.carousel-indicators li:hover{
-	background-color: #fff;
-}
-.jumbotron{
-	border-radius: 0;
-	background-repeat: no-repeat; 
-	background-size: 100%;
-	background-position: center;
-	color: #000;
-}
-/*____________________________________________________*/
-.modulos{
-	margin-bottom: 20px;
-	margin-top: 20px;
-	line-height:30px;
+#slideshow{
+	margin-bottom: -1rem;
 }
 
-
-/*---------------------------------------------------*/
+/*---------------------------sobrenos------------------------*/
 .SobreNos{
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -139,12 +157,16 @@ img#logo{
 	text-align: justify;
 	line-height: 30px;
 }
-.SobreNos img{
-	max-width: 100%;
+/*--------------------------Modulos------------------------------*/
+
+.modulos{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	line-height:30px;
 }
 
 /*---------------------localização-------------------------------*/
-section#localizacao{
+/* section#localizacao{
 	margin-top: 20px;
 
 }
@@ -155,38 +177,38 @@ section#localizacao p{
 }
 
 section#localizacao table.horario{
-	float: left;
-	border: 1px  ;
-	margin-left: 20px;
-	margin-top: 20px;
-	text-align: center;
-	background-color: rgb(244, 116, 37);
-	border: 1px solid #000;
-}
+				float: left;
+		 		border: 1px  ;
+				margin-left: 20px;
+				margin-top: 20px;
+				text-align: center;
+				background-color: rgb(244, 116, 37);
+				border: 1px solid #000;
+			}
 
 
 section#localizacao table.horario td{
-	border: 1px solid #000;
-	padding: 9px;
-	text-align: center;
-	background-color: #fff; 
-}
+				border: 1px solid #000;
+				padding: 9px;
+				text-align: center;
+				background-color: #fff; 
+			}
 section#localizacao img#mapa{
-	padding-top: -13px;
-	
-	border-radius: 1px;
-	width: 220px;
-	height: 204px;	
-	border: 3px solid rgb(244, 116, 37);
+				padding-top: -13px;
+				
+				border-radius: 1px;
+				width: 220px;
+				height: 204px;	
+				border: 3px solid rgb(244, 116, 37);
 
-	
-}
+				
+			}
 
 
 
-figure:hover >  figcaption{
-	opacity: 1;
-}
+ */			 figure:hover >  figcaption{
+				opacity: 1;
+			}
 
 
 /*---------------------------section atrações------------------------*/
@@ -195,8 +217,8 @@ section#atracoes{
 }
 /*--------------------------cardápio-------------------------------*/
 .comidas img{
-	width: 270px;
-	height: 210px;
+	width: 350px;
+	height: 300px;
 
 }
 .comidas h1{
@@ -211,11 +233,6 @@ section#atracoes{
 	padding: 25px 0 30px 0;
 	margin-bottom: -3rem;
 }
-
-.copy{
-	background-color: #191612;
-}
-
 .agradecimentos{
 	margin-bottom: 30px;
 }
@@ -273,17 +290,18 @@ section#atracoes{
 .contatos p{
 	line-height: 26px;
 }
-.contatos a{
+.redes-sociais a{
 	font-size: 18px;
 	display: inline-block;
+	background: rgb(244, 116, 37);;
 	color: #fff;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 19px;
 	border-radius: 50%;
 	text-align: center;
-	/*width: 36px;
-	height: 36px;*/
+	width: 36px;
+	height: 36px;
 	transition: 0.3s;
 }
 .loc{
@@ -318,25 +336,14 @@ section#atracoes{
 	padding-top: 18px;
 }
 a[href="#top"]{
-	padding:10px;
-	position:fixed;
-	top: 65%;
-	right:30px;
-	display:none;
-	font-size: 30px;
-	color: rgb(244, 116, 37);
+    padding:10px;
+    position:fixed;
+    top: 65%;
+    right:30px;
+    display:none;
+    font-size: 30px;
+    color: rgb(244, 116, 37);
 }
 a[href="#top"]:hover{
-	text-decoration:none;
+    text-decoration:none;
 }
-
-.tabela{
-	float: left;
-	border: 1px  ;
-	margin-left: 20px;
-	margin-top: 20px;
-	text-align: center;
-	background-color: #fff;
-	
-}
-
