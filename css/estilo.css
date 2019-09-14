@@ -2,6 +2,8 @@
 
 body{
 font-family: Ubuntu, arial, sans-serif;
+
+flex-direction: column;
 }
 /*----------start cabeçalho----------------*/
 nav {
@@ -107,7 +109,7 @@ color: #000;
 .linha1{
 			border-top: 10px solid rgb(244, 116, 37);
 	}
-/*--------------------------Slide Show---------------------------*/
+/*--------------------------Slide Show---------------------------
 
 
 .carousel-caption{
@@ -145,11 +147,12 @@ color: #000;
 #slideshow{
 	margin-bottom: -1rem;
 }
-
-/*---------------------------sobrenos------------------------*/
+---------------------------sobrenos------------------------*/
 .SobreNos{
 	margin-bottom: 20px;
 	margin-top: 20px;
+	border-left: 50px;
+    border-width: 50px;
 }
 
 .SobreNos p{
@@ -163,6 +166,11 @@ color: #000;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	line-height:30px;
+}
+.row{
+ border-left: 30px;
+ border-right: :  30px;
+ 
 }
 
 /*---------------------localização-------------------------------*/
