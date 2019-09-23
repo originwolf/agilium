@@ -42,6 +42,20 @@ text-transform: uppercase;
 font-weight: bold;
 }
 
+.dropdown-item{
+	border-bottom: 0.125rem solid #493e2b;
+}
+
+.dropdown-item:hover{
+	background-color: #fff;
+	background-color: transparent;
+}
+
+.dropdown-item a:hover{
+	text-decoration: none;
+}
+
+
 .nav-link:hover{
 color: rgb(244, 116, 37);
 border-top: 1px  solid rgb(244, 116, 37);
