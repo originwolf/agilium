@@ -52,15 +52,13 @@
 							<li class="nav-item pr-3">
 								<a class="nav-link" href="#footer">Contato</a>
 							</li>
-							<li class="nav-item pr-3 dropdown">
-								<a href="#" class="nav-link mx-2 dropdown-toggle" data-toggle="dropdown">Já é Cliente?</a>
-								<ul class="dropdown-menu">
-									<li class="dropdown-item"><a href="contato.php">Torne-se um</a></li>
-									<li class="dropdown-item"><a href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a>
-									</li>
-								</ul>
-							</li>
-
+							<li class="nav-item dropdown">
+        						<a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Já é cliente?</a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							        <a class="dropdown-item" href="contato.php">Torne-se um</a>
+							        <a class="dropdown-item" href="http://cliente.agilium.com.br/ControleAcesso/Login?ReturnUrl=%2F">Portal do cliente</a>
+						        </div>
+						    </li>
 						</ul>
 
 							</div>
@@ -233,23 +231,23 @@
 	</div>
 </footer>
 		<div class="copyright no-margin">
-			<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - Ebenézer</p> 
+			<p id="copyright" style="color:rgb(244, 116, 37)">Copyright 2019 - Gaby Venâncio</p> 
 		</div>
 		<a href="#top" class="fas fa-angle-double-up"></a>
 		<!-- criando uma function para o icon fas fa-angle-double-up levar o usuário ao topo da pagina -->
 		<script>
 			$(document).ready(function(){
-			$(window).scroll(function(){
-			if ($(this).scrollTop() > 100) {
-			$('a[href="#top"]').fadeIn();
-			} else {
-			$('a[href="#top"]').fadeOut();
-			}
-			});
-			$('a[href="#top"]').click(function(){
-			$('html, body').animate({scrollTop : 0},800);
-			return false;
-			});
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 100) {
+						$('a[href="#top"]').fadeIn();
+					} else {
+						$('a[href="#top"]').fadeOut();
+					}
+				});
+				$('a[href="#top"]').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+				});
 			});
 		</script>
 <!-- end of footer -->

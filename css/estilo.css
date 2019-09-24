@@ -44,11 +44,12 @@ font-weight: bold;
 
 .dropdown-item{
 	border-bottom: 0.125rem solid #493e2b;
+	border-top: thick 0.125rem solid #493e2b;
 }
 
 .dropdown-item:hover{
-	background-color: #fff;
-	background-color: transparent;
+	/*background-color: #fff;*/
+	color: rgb(244, 116, 37);
 }
 
 .dropdown-item a:hover{
