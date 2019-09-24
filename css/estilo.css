@@ -45,10 +45,10 @@ font-weight: bold;
 .dropdown-item{
 	border-bottom: 0.125rem solid #493e2b;
 	border-top: thick 0.125rem solid #493e2b;
+	color: #fff;
 }
 
 .dropdown-item:hover{
-	/*background-color: #fff;*/
 	color: rgb(244, 116, 37);
 }
 
@@ -64,9 +64,10 @@ border-bottom: 1px  solid rgb(244, 116, 37);
 }
 
 .dropdown-menu{
-top: 3.5rem;
-background-color: #404040;
-border-radius: 0;
+	/*top: 3.5rem;*/
+	background-color: #404040;
+	border-radius: 0;
+	top: 3.1rem;
 }
 .fa-bars{
 	color: rgb(244, 116, 37);
